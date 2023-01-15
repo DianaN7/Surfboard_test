@@ -5,7 +5,7 @@
 }
 
 .menu {
-  font-size: 15px;
+  font-size: 19px;
   font-weight: bold;
 }
 .menu__list {
@@ -14,10 +14,10 @@
 }
 
 .menu__item{
-  margin-right: 16px;
+  margin-right: 31px;
 
   &:last-child{
-    margin-right: 0;
+    margin-right: 0px;
   }
 
   &:hover{
@@ -37,11 +37,15 @@
 }
 
 .phone-number__icon-elem{
-  width: 12px;
-  height: 12px;
-  margin-right: 10px;
+  width: 13px;
+  height: 13px;
+  margin-right: 8px;
 }
 .menu__link {
   text-decoration: none;
 }
 
+.phone-number__text{
+  font-size: 21px;
+  margin-right: 61px;
+}
