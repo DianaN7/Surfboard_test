@@ -2,14 +2,15 @@
   display: flex;
 }
 
-.feature__icon {
- width: 48px;
- margin-right: 9px;
+.icon__feature {
+ width: rem(48px);
+ height: rem(50px);
+ margin-right: rem(11px);
 }
 
 .feature__text{
-  font-size: 19px;
+  font-size: rem(19px);
   line-height: 1.1;
-  max-width: 84px;
+  max-width: rem(84px);
 
 }

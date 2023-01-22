@@ -1,13 +1,17 @@
 .btn{
-  font-size: 19px;
+  font-size: rem(19px);
   font-weight: bold;
-  padding: 24px 46px;
+  padding: rem(24px) rem(46px);
   text-transform: uppercase;
-  border-radius: 100px;
+  border-radius: rem(100px);
   line-height: 1;
   text-decoration: none;
   display: inline-block;
   border: none;
+
+  @include phones{
+    padding: rem(24px) rem(39px);
+  }
   
   &--theme--yellow {
     background: #FEDB3F;

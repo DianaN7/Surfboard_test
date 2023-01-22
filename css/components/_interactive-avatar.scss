@@ -1,10 +1,15 @@
 .interactive-avatar{
-  width: 94px;
-  height: 97px;
-  border: 6px solid transparent;
+  width: rem(94px);
+  height: rem(97px);
+  border: rem(6px) solid transparent;
   border-radius: 50%;
   overflow: hidden;
   position: relative;
+
+  @include tablets{
+    width: rem(80px);
+    height: rem(80px);
+  }
 
   &--active{
     border-color: #FEDB3F;
