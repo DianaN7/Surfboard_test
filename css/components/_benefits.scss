@@ -16,14 +16,6 @@
     margin-bottom: rem(5px);
   }
 
-  &::before{
-    content: url("../img/separator.png");
-    position: absolute;
-    top: rem(65px);
-    right: 0;
-    transform: translateX(50%);
-  }
-
   &:first-child{
     padding-left: 0;
   }
@@ -34,5 +26,20 @@
     &:before{
       display: none;
     }
+  }
+}
+
+.icon__shape{
+  position: absolute;
+  width: 73px;
+  right: 0;
+  transform: translateX(50%);
+
+  @include tablets{
+    display: none;
+  }
+
+  @include phones{
+    display: none;
   }
 }

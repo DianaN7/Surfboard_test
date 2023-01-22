@@ -420,14 +420,6 @@ img {
     margin-bottom: 0.2777777778rem;
   }
 }
-.benefits__item::before {
-  content: url("../img/separator.png");
-  position: absolute;
-  top: 3.6111111111rem;
-  right: 0;
-  -webkit-transform: translateX(50%);
-          transform: translateX(50%);
-}
 .benefits__item:first-child {
   padding-left: 0;
 }
@@ -436,6 +428,24 @@ img {
 }
 .benefits__item:last-child:before {
   display: none;
+}
+
+.icon__shape {
+  position: absolute;
+  width: 73px;
+  right: 0;
+  -webkit-transform: translateX(50%);
+          transform: translateX(50%);
+}
+@media screen and (max-width: 768px) {
+  .icon__shape {
+    display: none;
+  }
+}
+@media screen and (max-width: 480px) {
+  .icon__shape {
+    display: none;
+  }
 }
 
 .benefit {
