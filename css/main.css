@@ -90,7 +90,6 @@ img {
 
 .hero {
   background: url("../img/bg.png") center top no-repeat;
-  background-color: #1968B1;
   background-size: cover;
   height: 100vh;
   min-height: 36.1111111111rem;
@@ -98,7 +97,7 @@ img {
 }
 @media screen and (max-width: 768px) {
   .hero {
-    background: url("../img/tablets.png") center top 90px no-repeat;
+    background: url("../img/tablets.png") center top 5rem no-repeat;
     background-color: #1968B1;
     background-size: cover;
   }
@@ -167,9 +166,14 @@ img {
   margin-bottom: 0.5555555556rem;
   text-transform: uppercase;
 }
+@media screen and (max-width: 768px) {
+  .hero__main-title {
+    font-size: 2.7777777778rem;
+  }
+}
 @media screen and (max-width: 480px) {
   .hero__main-title {
-    font-size: 2.2222222222rem;
+    font-size: 2.1111111111rem;
     line-height: 1.2;
   }
 }
@@ -371,9 +375,14 @@ img {
   text-transform: uppercase;
   color: #292929;
 }
+@media screen and (max-width: 768px) {
+  .section__title {
+    font-size: 2.7777777778rem;
+  }
+}
 @media screen and (max-width: 480px) {
   .section__title {
-    font-size: 2.1666666667rem;
+    font-size: 2.1111111111rem;
   }
 }
 
@@ -432,7 +441,7 @@ img {
 
 .icon__shape {
   position: absolute;
-  width: 73px;
+  width: 4.0555555556rem;
   right: 0;
   -webkit-transform: translateX(50%);
           transform: translateX(50%);
