@@ -1,18 +1,26 @@
-const reviews = document.querySelectorAll(".review");
-const previews = document.querySelectorAll(".author");
-
-const removeActiveStatus = ()=> {
-  previews.forEach((preview, ndx)=> {
-    preview.classList.remove("author--active");
-    reviews[ndx].classList.remove("review__active");
+;(function() {
+  const findBlockByAlias = (alias) => {
+    return $(".review__item").filter((ndx, item) => {
+      return $(item).attr("data-linked-with") === alias;
+    });
+  };
+  
+  $(".interactive-avatar__link").click((e) => {
+    e.preventDefault();
+  
+    const $this = $(e.currentTarget);
+    const target = $this.attr("data-open");
+    const itemToShow = findBlockByAlias(target);
+    const curItem = $this.closest(".review__switcher-item",".interactive-avatar");
+  
+    itemToShow.addClass("review__item--active").siblings().removeClass("review__item--active");
+    curItem.addClass("interactive-avatar--active").siblings().removeClass("interactive-avatar--active");
   });
-};
+  })()
 
-previews.forEach((preview,ndx)=>{
-  preview.addEventListener("click", () =>{
-    removeActiveStatus();
 
-    preview.classList.add("author--active");
-    reviews[ndx].classList.add("review__active");
-  });
-});
+
+
+
+
+

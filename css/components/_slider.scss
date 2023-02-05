@@ -4,6 +4,12 @@
 
 .products__slider {
   position: relative;
+
+  .bx-wrapper{
+    border: 0;
+    background: transparent;
+    box-shadow: none;
+  }
 }
 
 .products__arrow {
@@ -193,7 +199,7 @@
 }
 
 .products__price {
-  font-size: rem(60px);
+  font-size: rem(57px);
   font-weight: 300;
   line-height: rem(60px);
   color: #151515;
