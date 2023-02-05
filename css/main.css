@@ -951,6 +951,16 @@ img {
   margin-right: 4px;
   margin-bottom: 0;
 }
+@media screen and (max-width: 768px) {
+  .team__title-name {
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  .team__title-name {
+    font-size: 1rem;
+  }
+}
 
 .team__content {
   height: 0;

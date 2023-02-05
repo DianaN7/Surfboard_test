@@ -98,6 +98,14 @@
   color: $black;
   margin-right: 4px;
   margin-bottom: 0;
+
+  @include tablets {
+    font-size: rem(18px);
+  }
+
+  @include phones{
+    font-size: rem(18px);
+  }
 }
 
 .team__content {
