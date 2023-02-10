@@ -42,7 +42,10 @@ $(".form").submit(e => {
     request.done((data) => {
       content.text(data.message);
     });
-
+  
+    request.fail(() => {
+      content.text('Произошла ошибка');
+    })
    
 
     request.always(() => {
