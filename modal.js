@@ -43,11 +43,7 @@ $(".form").submit(e => {
       content.text(data.message);
     });
 
-    request.fail((data) => {
-      const message = data.responseJSON.message;
-      content.text(message);
-      modal.addClass("error-modal");
-    });
+   
 
     request.always(() => {
       $.fancybox.open({
